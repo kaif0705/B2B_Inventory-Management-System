@@ -1,0 +1,10 @@
+package com.Inventory_Management_System_B2B_SaaS.Inventory_Management_System_B2B_SaaS.Service;
+
+import com.Inventory_Management_System_B2B_SaaS.Inventory_Management_System_B2B_SaaS.DTOs.ProductCreateRequestDTO;
+import com.Inventory_Management_System_B2B_SaaS.Inventory_Management_System_B2B_SaaS.Model.Product;
+
+public interface ProductService {
+
+    Product createProduct(ProductCreateRequestDTO requestDTO);
+
+}
