@@ -4,6 +4,9 @@ import com.Inventory_Management_System_B2B_SaaS.Inventory_Management_System_B2B_
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface ProductTypeRepository extends JpaRepository<ProductType, Integer> {
+    Optional<ProductType> findByName(String perishable);
 }
